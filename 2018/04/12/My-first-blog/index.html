@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,13 @@
 <meta name="theme-color" content="#222">
 
 
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -97,9 +104,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -239,6 +246,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -323,6 +340,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
 
           
 
@@ -348,6 +396,35 @@
 
     
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Love me ��(?????)?</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Yusu 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Yusu 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -401,6 +478,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -482,6 +561,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -507,8 +593,6 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
 
 
 
@@ -524,11 +608,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -555,6 +634,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -594,6 +676,16 @@
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
 
   
 
@@ -606,13 +698,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
